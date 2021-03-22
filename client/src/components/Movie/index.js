@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './style.css'
 
 const index = ({ image, alt, title, desc, href }) => {
@@ -7,7 +8,7 @@ const index = ({ image, alt, title, desc, href }) => {
             <div className="movie-info">
                 <h2>{title}</h2>
                 <p>{desc}</p>
-                <a href={href} className="btn">Book Now</a>
+                <Link to={href} className="btn">Book Now</Link>
             </div>
         </div>
     )

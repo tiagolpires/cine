@@ -1,9 +1,11 @@
 import './style.css'
 import Movie from '../../components/Movie'
+import Header from '../../components/Header'
 
 const index = () => {
     return (
         <>
+            <Header/>
             <main>
                 <div className="main-info-container">
                     <h1>Movie Booking</h1>
@@ -21,14 +23,14 @@ const index = () => {
                     alt='once-upon-a-time-in-hollywood'
                     title='Once Upon a Time in Holywood'
                     desc='A faded television actor and his stunt double strive to achieve fame and success in the final years of Hollywoods Golden Age in 1969 Los Angeles.'
-                    href='/'
+                    href='/book'
                 />
                 <Movie 
                     image='/images/walter-mitty.jpg'
                     alt='walter-mitty'
                     title='The Secret Life Of Walter Mitty'
                     desc='A faded television actor and his stunt double strive to achieve fame and success in the final years of Hollywoods Golden Age in 1969 Los Angeles.'
-                    href='/'
+                    href='/book'
                 />
             </section>
         </>
