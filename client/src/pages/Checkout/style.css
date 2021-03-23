@@ -1,0 +1,129 @@
+.checkout-container {
+    height: 100vh;
+    display: flex;
+}
+
+.checkout-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkout-title h1 {
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+
+.selected-seats {
+    display: flex;
+    align-items: center;
+}
+
+.selected-seat {
+    padding: 5px 4px;
+    margin: 0 5px;
+    background-color: #2EA2E6;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.checkout-input {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    min-width: 370px;
+    margin: 20px 0;
+}
+.checkout-input label {
+    margin-bottom: 10px;
+}
+
+.checkout-input input {
+    background-color: #001D20;
+    outline: none;
+    border: 1px solid #2EA2E6;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.payment-method-container {
+    margin-bottom: 40px;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.payment-method-checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    border: 1px solid #2EA2E6;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.payment-method.off span{
+    color: #7f7f7f;
+}
+
+.payment-method.off .payment-method-checkbox {
+    border-color: #254f67;
+    cursor: default;
+}
+
+.checkout-form button {
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media(min-width: 2000px) {
+    .selected-seat {
+        font-size: 25px;
+    }
+
+    .checkout-input{
+        font-size: 25px;
+        margin: 40px 0;
+    }
+    
+    .checkout-input input {
+        padding: 20px 20px;
+        font-size: 25px;
+    }
+
+    .payment-method-container {
+        font-size: 25px;
+    }
+
+    .payment-method {
+        margin-bottom: 40px;
+    }
+
+    .payment-method-checkbox {
+        width: 40px;
+        height: 40px;
+    }
+
+    .checkout-form button {
+        font-size: 25px;
+        padding: 20px 40px;
+    }
+}
+
+@media(max-width: 550px) {
+    .checkout-title {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .checkout-input {
+        width: 100%;
+        min-width: auto;
+    }
+}
